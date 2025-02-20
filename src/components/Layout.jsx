@@ -4,15 +4,16 @@ import PropTypes from 'prop-types';
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-orange-100 to-orange-300">
       <Navbar />
-      <main className="flex-grow">
+      <main>
         {children}
       </main>
       <Footer />
     </div>
   );
 };
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };

@@ -1,11 +1,9 @@
-import Navbar from '../components/Navbar';
+
 
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-100 to-orange-300">
-      <Navbar />
-
+    <>
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto">
@@ -102,8 +100,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-    </div>
+    </>
   );
 }
 
