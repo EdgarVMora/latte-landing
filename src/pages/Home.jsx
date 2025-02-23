@@ -4,6 +4,7 @@ import coldBrew from '../assets/latteImages/coldBrew.png';
 import espresso from '../assets/latteImages/espresso.png';
 import frappuccino from '../assets/latteImages/frappuccino.png';
 import teHelado from '../assets/latteImages/teHelado.png';
+import logoLatte from '../assets/latteImages/logoLatte.png';
 
 const Home = () => {
   return (
@@ -101,16 +102,28 @@ const Home = () => {
                 Disponible para iOS y Android. Únete a nuestra comunidad de más de 1 millón de usuarios satisfechos.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800">
+                <button className="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transform hover:scale-105 transition-all duration-300">
                   <i className="fab fa-apple mr-2"></i> App Store
                 </button>
-                <button className="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800">
+                <button className="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transform hover:scale-105 transition-all duration-300">
                   <i className="fab fa-google-play mr-2"></i> Play Store
                 </button>
               </div>
             </div>
-            <div className="md:w-1/2">
-              <img src="/app-mockup.png" alt="App Mockup" className="max-w-md mx-auto" />
+            <div className="md:w-1/2 flex flex-col items-center">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-orange-600 rounded-[2.5rem] blur opacity-30 group-hover:opacity-40 transition duration-300"></div>
+                <div className="relative backdrop-blur-sm bg-white/20 rounded-[2.5rem] p-8 transform group-hover:scale-105 transition duration-300">
+                  <img 
+                    src={logoLatte} 
+                    alt="Latte App" 
+                    className="w-80 h-80 object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]"
+                  />
+                </div>
+              </div>
+              <h3 className="text-6xl font-bold mt-8 tracking-wide bg-gradient-to-r from-orange-600 to-orange-900 bg-clip-text text-transparent">
+                Latte
+              </h3>
             </div>
           </div>
         </div>
