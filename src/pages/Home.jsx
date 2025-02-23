@@ -1,23 +1,41 @@
+import imageHeroSection from '../assets/latteImages/imageHeroSection.png';
+import cafeHelado from '../assets/latteImages/cafeHelado.png';
+import coldBrew from '../assets/latteImages/coldBrew.png';
+import espresso from '../assets/latteImages/espresso.png';
+import frappuccino from '../assets/latteImages/frappuccino.png';
+import teHelado from '../assets/latteImages/teHelado.png';
+
 const Home = () => {
   return (
     <>
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto">
-          <div className="backdrop-blur-lg bg-white/30 rounded-3xl p-12 max-w-4xl mx-auto">
-            <h1 className="text-5xl font-bold text-orange-900 mb-6">
-              Descubre el sabor de las recompensas
-            </h1>
-            <p className="text-xl text-orange-800 mb-8">
-              Gana puntos con cada compra y disfruta de bebidas gratis, ofertas exclusivas y más.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600">
-                Descarga la App
-              </button>
-              <button className="border-2 border-orange-500 text-orange-500 px-8 py-3 rounded-full hover:bg-orange-500 hover:text-white">
-                Conoce más
-              </button>
+          <div className="backdrop-blur-lg bg-white/30 rounded-3xl p-12 max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img 
+                  src={imageHeroSection} 
+                  alt="Hero Latte" 
+                  className="rounded-2xl w-full h-auto object-cover shadow-xl hover:transform hover:scale-105 transition-all duration-300"
+                />
+              </div>
+              <div className="md:w-1/2 space-y-6">
+                <h1 className="text-6xl font-bold text-orange-900 mb-8">
+                  Descubre el sabor de las recompensas
+                </h1>
+                <p className="text-xl text-orange-800 mb-8">
+                  Gana puntos con cada compra y disfruta de bebidas gratis, ofertas exclusivas y más.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <button className="bg-orange-500 text-white px-8 py-3 rounded-full hover:bg-orange-600 transform hover:scale-105 transition-all">
+                    Descarga la App
+                  </button>
+                  <button className="border-2 border-orange-500 text-orange-500 px-8 py-3 rounded-full hover:bg-orange-500 hover:text-white transform hover:scale-105 transition-all">
+                    Conoce más
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -152,31 +170,31 @@ const products = [
     id: 1,
     name: "Café Helado",
     price: 2.95,
-    image: "https://placehold.co/400x300?text=Cafe+Helado"
+    image: cafeHelado
   },
   {
     id: 2,
     name: "Cold Brew",
     price: 3.25,
-    image: "https://placehold.co/400x300?text=Cold+Brew"
+    image: coldBrew
   },
   {
     id: 3,
     name: "Espresso",
     price: 2.45,
-    image: "https://placehold.co/400x300?text=Espresso"
+    image: espresso
   },
   {
     id: 4,
     name: "Frappuccino",
     price: 4.85,
-    image: "https://placehold.co/400x300?text=Frappuccino"
+    image: frappuccino
   },
   {
     id: 5,
     name: "Té Helado",
     price: 3.65,
-    image: "https://placehold.co/400x300?text=Te+Helado"
+    image: teHelado
   }
 ];
 

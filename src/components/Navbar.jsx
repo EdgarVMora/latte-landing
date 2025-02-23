@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/" className="text-orange-900 hover:text-orange-700">Menú</Link>
           <Link to="/rewards" className="text-orange-900 hover:text-orange-700">Recompensas</Link>
-          <Link to="/gift-cards" className="text-orange-900 hover:text-orange-700">Tarjetas Regalo</Link>
+          <Link to="/location" className="text-orange-900 hover:text-orange-700">Localizanos</Link>
           <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600">
             Únete Ahora
           </button>
